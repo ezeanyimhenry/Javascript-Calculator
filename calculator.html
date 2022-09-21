@@ -137,10 +137,12 @@
       let add = (input) => {
         view.innerHTML += input;
         num.push(`${input}`);
+        console.log(num);
       };
 
       let calc = () => {
-        let accumulated = accumulateNumbers(num, digits);
+        // let accumulated = accumulateNumbers(num, digits);
+        console.log(accumulateNumbers(num, digits));
 
         for (let i = 0; i < accumulated.length; i++) {
           if (accumulated[i] == "/") {
